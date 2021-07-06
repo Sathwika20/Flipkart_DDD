@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Login" >
+    <test name="Flipkart Login Test">
+        <parameter name="url" value="https://www.flipkart.com/"></parameter>
+        <classes>
+            <class name="com.bridgelabz.base.Base">
+                <methods>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.pages.Login">
+                <methods>
+                    <include name="getUserName"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.LoginTest">
+                <methods>
+                    <include name="loginToApplication"/>
+                        <parameter name="userName" value="7989216041">
+                    </parameter>
+                        <parameter name="passWord" value="ABCdef123">
+                    </parameter>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
